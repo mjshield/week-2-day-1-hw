@@ -1,30 +1,30 @@
 class Team
 
-  attr_reader :name
-  attr_accessor :coach, :players
+  # attr_reader :name
+  attr_accessor :coach, :players, :points, :name
 
-  def intialize(name, coach)
-    @name = name
+  def initialize(name, coach)
+    @team_name = name
     @players = []
     @coach = coach
     @points = 0
   end
 
-# def get_team_name
-#   return @name
-# end
+  # def get_team_name
+  #   return @team_name
+  # end
 
-# def get_players
-#   return @players
-# end
+  # def get_players
+  #   return @players
+  # end
 
-# def get_coach
-#   return @coach
-# end
+  # def get_coach
+  #   return @coach
+  # end
 
-# def new_coach(new_coach)
-#   @coach = new_coach
-# end
+  # def new_coach(new_coach)
+  #   @coach = new_coach
+  # end
 
   def add_new_player(new_player)
     @players.push(new_player)
